@@ -1,0 +1,87 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "Gilroy-Bold ☞";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Gilroy-Bold ☞"), url("Gilroy-Bold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Gilroy-Heavy ☞";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Gilroy-Heavy ☞"), url("Gilroy-Heavy.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Gilroy-Light ☞";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Gilroy-Light ☞"), url("Gilroy-Light.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Gilroy-Medium ☞";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Gilroy-Medium ☞"), url("Gilroy-Medium.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Gilroy-Regular ☞";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Gilroy-Regular ☞"), url("Gilroy-Regular.woff") format("woff");
+}
+
+body {
+  font-family: "Gilroy-Regular ☞";
+}
+
+nav .navbar-toggler-icon {
+  border: 1px solid #2cb855;
+}
+
+nav .nav-list {
+  padding-left: 1.2rem;
+  padding-right: 1.2rem;
+}
+
+@media only screen and (max-width: 991px) {
+  nav .nav-list {
+    padding: 0;
+  }
+}
+
+nav .nav-list .nav-link {
+  color: #333333;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 21px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+nav .nav-list .nav-link:hover {
+  color: #2cb855;
+}
+
+nav .nav-list .start-btn {
+  background-color: #2cb855;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 21px;
+  letter-spacing: 0em;
+  text-align: left;
+  padding: 10px 20px;
+  color: #fff;
+}
+
+nav .nav-list .start-btn:hover {
+  background-color: #fff;
+  border: 2px solid #2cb855;
+  color: #2cb855;
+}
+/*# sourceMappingURL=style.css.map */
