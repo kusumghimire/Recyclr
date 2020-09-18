@@ -84,4 +84,47 @@ nav .nav-list .start-btn:hover {
   border: 2px solid #2cb855;
   color: #2cb855;
 }
+
+.mt-banner-section {
+  height: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+@media only screen and (max-width: 991px) {
+  .mt-banner-section {
+    height: 100%;
+  }
+}
+
+.mt-banner-title h4 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.5vw;
+  line-height: 24px;
+  color: #333333;
+}
+
+.mt-banner-title h3 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 4vw;
+  color: #333333;
+}
+
+.mt-banner-title h1 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 10vw;
+  color: #2cb855;
+}
+
+.mt-banner-img img {
+  width: 100%;
+  height: 100%;
+}
 /*# sourceMappingURL=style.css.map */
