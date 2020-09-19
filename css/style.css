@@ -81,6 +81,10 @@ nav .nav-list .start-btn:hover {
   color: #2cb855;
 }
 
+.mt-medium-padding {
+  padding: 60px 0;
+}
+
 .mt-banner-section {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -94,7 +98,7 @@ nav .nav-list .start-btn:hover {
 .mt-banner-title h4 {
   font-style: normal;
   font-weight: bold;
-  font-size: 1.5vw;
+  font-size: 24px;
   line-height: 24px;
   color: #333333;
 }
@@ -102,7 +106,7 @@ nav .nav-list .start-btn:hover {
 .mt-banner-title h3 {
   font-style: normal;
   font-weight: bold;
-  font-size: 3vw;
+  font-size: 4vw;
   color: #333333;
 }
 
