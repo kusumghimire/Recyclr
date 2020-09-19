@@ -39,7 +39,22 @@ body {
 
 $secondaryColor: #333333;
 $primaryColor: #2cb855;
-
+.start-btn {
+  background-color: $primaryColor;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 21px;
+  letter-spacing: 0em;
+  padding: 10px 20px;
+  color: #fff;
+  border-radius: 14px;
+  &:hover {
+    background-color: #fff;
+    border: 2px solid $primaryColor;
+    color: $primaryColor;
+  }
+}
 nav {
   .nav-list {
     padding-left: 1.2rem;
@@ -90,6 +105,9 @@ nav {
   // }
 }
 .mt-banner-title {
+  animation-name: content;
+  animation-duration: 5s;
+  animation-fill-mode: forwards;
   h4 {
     font-style: normal;
     font-weight: bold;
@@ -106,10 +124,11 @@ nav {
   }
   h1 {
     font-style: normal;
-    font-weight: bold;
+    font-family: "Gilroy-Heavy ☞";
     font-size: 8vw;
     // line-height: 130px;
     color: $primaryColor;
+    text-transform: uppercase;
   }
   p {
     font-style: normal;
@@ -120,6 +139,9 @@ nav {
   }
 }
 .mt-banner-img {
+  animation-name: contentImg;
+  animation-duration: 5s;
+  animation-fill-mode: forwards;
   img {
     width: 100%;
     height: 100%;
@@ -129,6 +151,19 @@ nav {
 
 .mt-recylce-section {
   background: rgba(79, 210, 85, 0.2);
+  p{
+    max-width: 400px;
+  }
+  
+}
+.mt-recycle-title{
+  opacity: 0;
+  animation-name: recycleTitle;
+  animation-duration: 3s;
+  animation-delay: 3s;
+  transition-property: transform;
+  animation-fill-mode: forwards;
+  transition-duration: 1s;
 }
 h2 {
   font-style: normal;
@@ -142,7 +177,7 @@ h2 {
 .mt-service-section {
   h2 {
     font-style: normal;
-    font-weight: bold;
+    font-family: "Gilroy-Bold ☞";
     font-size: 48px;
     line-height: 48px;
     text-align: center;
@@ -224,4 +259,35 @@ footer {
       padding: 0 0.5rem;
     }
   }
+}
+
+@keyframes content {
+  0% {
+    left: -1000px;
+  }
+  100% {
+    left: 0px;
+  }
+}
+@keyframes contentImg {
+  0% {
+   top: -1000px;
+  }
+  100% {
+    top: 0px;
+  }
+}
+
+@keyframes recycleTitle{
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.box{
+  position: relative;
+  height: 500px;
 }
