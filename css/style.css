@@ -171,6 +171,11 @@ nav .nav-list .start-btn:hover {
   color: #EA4335;
 }
 
+.mt-service-contents .mt-service img {
+  width: 25px;
+  height: 25px;
+}
+
 .mt-service-contents .use {
   background: rgba(66, 133, 244, 0.2);
 }
@@ -200,5 +205,9 @@ nav .nav-list .start-btn:hover {
   line-height: 22px;
   color: #4FD255;
   text-decoration: none;
+}
+
+footer {
+  background: #121212;
 }
 /*# sourceMappingURL=style.css.map */
