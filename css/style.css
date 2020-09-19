@@ -188,4 +188,13 @@ nav .nav-list .start-btn:hover {
   line-height: 24px;
   color: #333333;
 }
+
+.mt-service-contents a {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+  color: #4FD255;
+  text-decoration: none;
+}
 /*# sourceMappingURL=style.css.map */
