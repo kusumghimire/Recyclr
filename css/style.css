@@ -168,7 +168,7 @@ nav .nav-list .start-btn:hover {
 
 .mt-service-contents .mt-service .fas {
   font-size: 25px;
-  color: #EA4335;
+  color: #ea4335;
 }
 
 .mt-service-contents .mt-service img {
@@ -203,11 +203,29 @@ nav .nav-list .start-btn:hover {
   font-weight: bold;
   font-size: 18px;
   line-height: 22px;
-  color: #4FD255;
+  color: #4fd255;
   text-decoration: none;
 }
 
 footer {
   background: #121212;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+footer span {
+  color: #fff;
+  font-style: normal;
+  font-family: "Gilroy-Medium ☞";
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.mt-social-icons li {
+  list-style: none;
+}
+
+.mt-social-icons li a {
+  padding: 0 0.5rem;
 }
 /*# sourceMappingURL=style.css.map */

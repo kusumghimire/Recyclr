@@ -77,7 +77,7 @@ nav {
     }
   }
 }
-.mt-medium-padding{
+.mt-medium-padding {
   padding: 60px 0;
 }
 // Banner section
@@ -156,22 +156,22 @@ nav {
     align-items: center;
     justify-content: center;
     margin-right: 15px;
-    .fas{
+    .fas {
       font-size: 25px;
-      color: #EA4335;
+      color: #ea4335;
     }
-    img{
+    img {
       width: 25px;
       height: 25px;
     }
   }
-  .use{
+  .use {
     background: rgba(66, 133, 244, 0.2);
   }
-  .recycle{
+  .recycle {
     background: rgba(251, 188, 5, 0.2);
   }
-  .learn{
+  .learn {
     width: 80px;
     background-color: transparent;
     margin-right: 0;
@@ -185,16 +185,32 @@ nav {
       color: $secondaryColor;
     }
   }
-  a{
+  a {
     font-style: normal;
-font-weight: bold;
-font-size: 18px;
-line-height: 22px;
-color: #4FD255;
-text-decoration: none;
-
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+    color: #4fd255;
+    text-decoration: none;
   }
 }
-footer{
+footer {
   background: #121212;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  span {
+    color: #fff;
+    font-style: normal;
+  font-family: "Gilroy-Medium ☞";
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
+.mt-social-icons {
+  li {
+    list-style: none;
+    a{
+      padding: 0 0.5rem;
+    }
+  }
 }
