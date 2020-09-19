@@ -372,7 +372,6 @@ footer span {
 
 /*animation element*/
 .animation-section {
-  max-height: 500px;
   overflow: hidden;
 }
 
@@ -417,12 +416,10 @@ footer span {
   }
 }
 
-/*3 grid layout*/
-/*bounce up animation for the subject*/
 .bounce-up .subject {
   opacity: 0;
-  -webkit-transition: all 900ms ease-out;
-  transition: all 900ms ease-out;
+  -webkit-transition: all 4s ease-out;
+  transition: all 4s ease-out;
   -webkit-transform: translate3d(0px, 200px, 0px);
   transform: translate3d(0px, 200, 0px);
   -webkit-backface-visibility: hidden;
@@ -435,12 +432,12 @@ footer span {
   transform: translate3d(0px, 0px, 0px);
 }
 
+.bounce-up.in-view .subject img {
+  max-width: 100%;
+}
+
 .subject {
   float: left;
   width: 100%;
 }
-
-/*subject icon at top*/
-/*Category color / icon color*/
-/*hovering over subject*/
 /*# sourceMappingURL=style.css.map */
