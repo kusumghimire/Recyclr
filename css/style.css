@@ -356,8 +356,91 @@ footer span {
   }
 }
 
-.box {
-  position: relative;
-  height: 500px;
+.cf:before,
+.cf:after {
+  content: " ";
+  display: table;
 }
+
+.cf:after {
+  clear: both;
+}
+
+.mt-recylce-section {
+  padding-top: 60px;
+}
+
+/*animation element*/
+.animation-section {
+  max-height: 500px;
+  overflow: hidden;
+}
+
+.animation-element {
+  position: relative;
+  -webkit-transform: translatey(0px);
+          transform: translatey(0px);
+  -webkit-animation: float 6s ease-in-out infinite;
+          animation: float 6s ease-in-out infinite;
+  overflow: hidden;
+  transform: translatey(0px);
+  animation: float 6s ease-in-out infinite;
+}
+
+@-webkit-keyframes float {
+  0% {
+    -webkit-transform: translatey(0px);
+            transform: translatey(0px);
+  }
+  50% {
+    -webkit-transform: translatey(-20px);
+            transform: translatey(-20px);
+  }
+  100% {
+    -webkit-transform: translatey(0px);
+            transform: translatey(0px);
+  }
+}
+
+@keyframes float {
+  0% {
+    -webkit-transform: translatey(0px);
+            transform: translatey(0px);
+  }
+  50% {
+    -webkit-transform: translatey(-20px);
+            transform: translatey(-20px);
+  }
+  100% {
+    -webkit-transform: translatey(0px);
+            transform: translatey(0px);
+  }
+}
+
+/*3 grid layout*/
+/*bounce up animation for the subject*/
+.bounce-up .subject {
+  opacity: 0;
+  -webkit-transition: all 900ms ease-out;
+  transition: all 900ms ease-out;
+  -webkit-transform: translate3d(0px, 200px, 0px);
+  transform: translate3d(0px, 200, 0px);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.bounce-up.in-view .subject {
+  opacity: 1;
+  -webkit-transform: translate3d(0px, 0px, 0px);
+  transform: translate3d(0px, 0px, 0px);
+}
+
+.subject {
+  float: left;
+  width: 100%;
+}
+
+/*subject icon at top*/
+/*Category color / icon color*/
+/*hovering over subject*/
 /*# sourceMappingURL=style.css.map */

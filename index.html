@@ -12,7 +12,8 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
     integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
     crossorigin="anonymous" />
-
+  <!--javascript code -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <link rel="stylesheet" href="/fonts/style.css">
   <link rel="stylesheet" href="/css/style.css">
 </head>
@@ -75,38 +76,75 @@
     </div>
   </section>
 
-<section class="mt-recylce-section mt-medium-padding">
-<div class="container">
-  <div class="row">
-    <div class="mt-recycle-title">
-      <h2>
-        Ready to <br>
-        Get started ?
-      </h2>
-      <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.   </p>
-      <button type="button" class="btn start-btn">Start Recycling</button>
-    </div>
-    <div class="box">
-      <span style="--i:1">
-        <img src="/img/cylce-1.png" alt="" srcset="">
-      </span>
-      <span style="--i:1">
-        <img src="/img/cylce-2.png" alt="" srcset="">
-      </span>
-      <span style="--i:1">
-        <img src="/img/cylce-3.png" alt="" srcset="">
-      </span>
-      <span style="--i:1">
-        <img src="/img/cylce-5.png" alt="" srcset="">
-      </span>
-      <span style="--i:1">
-        <img src="/img/cylce-5.png" alt="" srcset="">
-      </span>
-    </div>
-  </div>
-</div>
+  <section class="mt-recylce-section ">
+    <div class="container">
+      <div class="row">
+        <div class="mt-recycle-title col-md-4">
+          <h2>
+            Ready to <br>
+            Get started ?
+          </h2>
+          <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. </p>
+          <button type="button" class="btn start-btn">Start Recycling</button>
+        </div>
+        <div class="animation-section col-md-8">
+          <!-- Course 1 -->
+          <div class="animation-element bounce-up cf">
+            <div class="subject development">
+              <img src="/img/cycle-8.png" alt="">
+              <img src="/img/cycle-9.png" alt="">
+              <img src="/img/cycle-3.png" alt="">
+              <img src="/img/cycle-4.png" alt="">
+              <img src="/img/cycle-11.png" alt="">
+            </div>
+          </div>
+          <!-- Course 2 -->
+          <div class="animation-element bounce-up cf">
+            <div class="subject photography">
+              <img src="/img/cycle-10.png" alt="">
+              <img src="/img/cycle-7.png" alt="">
+              <img src="/img/cycle-1.png" alt="">
+            </div>
+          </div>
+          <!-- Course 3 -->
+          <!-- <div class="animation-element bounce-up">
+            <div class="subject photography">
+              <img src="/img/cycle-1.png" alt="">
+              <img src="/img/cycle-11.png" alt="">
+            </div>
+          </div> -->
+          <!-- Course 4 -->
+          <!-- <div class="animation-element bounce-up cf">
+            <div class="subject design">
+              <img src="/img/cycle-4.png" alt="">
+            </div>
+          </div> -->
+          <!-- Course 5 -->
+          <!-- <div class="animation-element bounce-up cf">
+            <div class="subject development">
+              <img src="/img/cycle-7.png" alt="">
+              <img src="/img/cycle-10.png" alt="">
+            </div>
+          </div> -->
+          <!-- Course 6 -->
+          <!-- <div class="animation-element bounce-up cf">
+            <div class="subject development">
+              <img src="/img/cycle-4.png" alt="">
+              <img src="/img/cycle-11.png" alt="">
+            </div>
+          </div> -->
+          <!-- Course 7 -->
+          <!-- <div class="animation-element bounce-up">
+            <div class="subject photography">
+              <img src="/img/cycle-9.png" alt="" srcset="">
+            </div>
+          </div> -->
+        </div>
 
-</section>
+      </div>
+
+  </section>
 
 
 
@@ -192,6 +230,7 @@
     </section>
   </footer>
 
+
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
     integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
     crossorigin="anonymous"></script>
@@ -201,6 +240,34 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
     integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
     crossorigin="anonymous"></script>
+  <script>
+    var $animation_elements = $('.animation-element');
+    var $window = $(window);
+
+    function check_if_in_view() {
+      var window_height = $window.height();
+      var window_top_position = $window.scrollTop();
+      var window_bottom_position = (window_top_position + window_height);
+
+      $.each($animation_elements, function () {
+        var $element = $(this);
+        var element_height = $element.outerHeight();
+        var element_top_position = $element.offset().top;
+        var element_bottom_position = (element_top_position + element_height);
+
+        //check to see if this current container is within viewport
+        if ((element_bottom_position >= window_top_position) &&
+          (element_top_position <= window_bottom_position)) {
+          $element.addClass('in-view');
+        } else {
+          $element.removeClass('in-view');
+        }
+      });
+    }
+
+    $window.on('scroll resize', check_if_in_view);
+    $window.trigger('scroll');
+  </script>
 </body>
 
 </html>
