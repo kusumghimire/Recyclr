@@ -131,6 +131,20 @@ nav .nav-list .start-btn:hover {
   margin-right: -20px;
 }
 
+.mt-recylce-section {
+  background: rgba(79, 210, 85, 0.2);
+}
+
+h2 {
+  font-style: normal;
+  font-family: "Gilroy-Bold ☞";
+  font-size: 48px;
+  line-height: 48px;
+  text-align: center;
+  color: #333333;
+  text-align: left;
+}
+
 .mt-service-section h2 {
   font-style: normal;
   font-weight: bold;

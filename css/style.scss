@@ -127,6 +127,18 @@ nav {
   }
 }
 
+.mt-recylce-section {
+  background: rgba(79, 210, 85, 0.2);
+}
+h2 {
+  font-style: normal;
+  font-family: "Gilroy-Bold ☞";
+  font-size: 48px;
+  line-height: 48px;
+  text-align: center;
+  color: #333333;
+  text-align: left;
+}
 .mt-service-section {
   h2 {
     font-style: normal;
@@ -145,7 +157,6 @@ nav {
     color: #727272;
   }
 }
-
 .mt-service-contents {
   .mt-service {
     width: 100px;
@@ -201,7 +212,7 @@ footer {
   span {
     color: #fff;
     font-style: normal;
-  font-family: "Gilroy-Medium ☞";
+    font-family: "Gilroy-Medium ☞";
     font-size: 18px;
     line-height: 24px;
   }
@@ -209,7 +220,7 @@ footer {
 .mt-social-icons {
   li {
     list-style: none;
-    a{
+    a {
       padding: 0 0.5rem;
     }
   }
