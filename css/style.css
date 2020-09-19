@@ -99,6 +99,16 @@ nav .nav-list .start-btn:hover {
   color: #2cb855;
 }
 
+@media only screen and (max-width: 991px) {
+  .navbar {
+    margin-bottom: 30px;
+  }
+}
+
+.navbar-brand {
+  margin-left: -15px;
+}
+
 .mt-medium-padding {
   padding: 60px 0;
 }
@@ -148,7 +158,7 @@ nav .nav-list .start-btn:hover {
 .mt-banner-title p {
   font-style: normal;
   font-weight: 500;
-  font-size: 24px;
+  font-size: 20px;
   line-height: 32px;
   color: #727272;
 }
@@ -368,6 +378,7 @@ footer span {
 
 .mt-recylce-section {
   padding-top: 60px;
+  padding-bottom: 25px;
 }
 
 /*animation element*/

@@ -92,6 +92,14 @@ nav {
     }
   }
 }
+.navbar{
+  @media only screen and (max-width:991px){
+    margin-bottom: 30px;
+  }
+}
+.navbar-brand{
+  margin-left:-15px;
+}
 .mt-medium-padding {
   padding: 60px 0;
 }
@@ -100,9 +108,6 @@ nav {
   display: flex;
   align-items: center;
   height: 90vh;
-  // @media only screen and (max-width: 991px) {
-  //   height: 100%;
-  // }
 }
 .mt-banner-title {
   animation-name: content;
@@ -133,7 +138,7 @@ nav {
   p {
     font-style: normal;
     font-weight: 500;
-    font-size: 24px;
+    font-size: 20px;
     line-height: 32px;
     color: #727272;
   }
@@ -299,6 +304,7 @@ footer {
 }
 .mt-recylce-section{
   padding-top: 60px;
+  padding-bottom: 25px;
 }
 
 /*animation element*/
